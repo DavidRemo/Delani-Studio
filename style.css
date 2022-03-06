@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+html { 
+    scroll-behavior: smooth; 
+  }
+
+body{
+    overflow-x: hidden;
+    font-family: 'Lato' sans-serif;
+    color:#505962;
+}
+
+.offset::before{
+    display: block;
+    content: "";
+    height: 4rem;
+}
+
+/*--Navigation--*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: #0005;
+}
+
+.navbar-brand img{
+    height: 2rem;
+}
+
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+.collapse .navbar-nav .nav-item .nav-link{
+    color: white;
+    padding-top: .8rem;
+}
+
+.collapse .navbar-nav .nav-item .nav-link.active,
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    color: #08f7d3;
+}
+
+/*--Landing Page--*/
+.home-inner{
+    background-image: url(images/backgrounds/h_img.jpg);
+    /* Full height */
+    min-height: 100vh;    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caption h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption p{
+    font-size: 1rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+
+/*--About Us Section--*/
+.narrow{
+    width: 75%;
+    margin: 1.5rem auto;
+}
+
+h1.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
+}
+
+/*--Services Section--*/
+.fixed-background{
+    background-image: url(images/backgrounds/s_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.dark{
+    background-color: #0005;
+    color: white;
+    padding: 7rem 2rem;
+}
+
+.fixed-background h1{
+    margin-bottom: 2rem;
+}
+
+.fixed-background p{
+    margin-top: 1rem;   
+}
+
+/*--What We Do Section--*/
+.jumbotron{
+    padding: 2rem 0 3.5rem;
+    min-height: 50vh;
+    margin-top:-70px;
+}
+
+.feature button{
+    border: none;
+    padding: 8px 90px;
+    background-color:  #e9ecef;
+}
+
+.feature button:hover, .feature button:focus {
+    outline: none;
+  }
+
+.feature_1 button{
+    border: none;
+    padding: 10px 90px;
+    background-color:  #e9ecef;
+}
+
+.feature_1 button:hover, .feature_1 button:focus {
+    outline: none;
+  }
+
+.feature_2 button{
+    border: none;
+    padding: 2px 10px;
+    background-color:  #e9ecef;
+}
+
+.feature_2 button:hover, .feature_2 button:focus {
+    outline: none;
+  }
+
+/*--Portfolio Section--*/
+#portfolio{
+    margin-top:-30px;
+}
+
+.image{
+    position: relative;
+    width: 300px;
+}
+.image_img{
+    width: 100%;
+    display: block;
+}
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image_overlay:hover{
+    opacity: 1;
+}
+
+.image_overlay:hover > *{
+    transform: translateY(0);
+}
+
+.image_description{
+    font-size: 1.25em;
+}
+
+/*--Contact Us Section--*/
+.contact-background{
+    background-image: url(images/backgrounds/c_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.dark{
+    background-color: #0005;
+    color: white;
+    padding: 7rem 2rem;
+}
+
+/*--Footer Section--*/
+#footer .row img{
+    width: 50px;
+    padding-left: 10px;
+}
